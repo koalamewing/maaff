@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Surat Permintaan Maaf Dari Revan</title>
+</head>
+<body style="
+    font-family: Arial; 
+    text-align:center; 
+    margin-top:100px; 
+    background: linear-gradient(to bottom, #0f2027, #203a43, #2c5364);
+    color: white;
+">
+
+    <h2>Surat Permintaan Maaf Dari Revan</h2>
+    
+    <button onclick="mintaMaaf()" 
+    style="padding:10px 20px; border:none; border-radius:8px; cursor:pointer;">
+        Klik di sini
+    </button>
+
+    <p id="hasil" style="
+        margin-top:30px; 
+        font-size:18px; 
+        max-width:600px; 
+        margin-left:auto; 
+        margin-right:auto;
+        line-height:1.6;
+    "></p>
+
+    <script>
+        function mintaMaaf() {
+            let nama = prompt("Masukin nama kamu dulu ya:");
+
+            if (nama != null && nama != "") {
+                document.getElementById("hasil").innerHTML =
+                "Hai " + nama + ",<br><br>" +
+                "Aku mau minta maaf ya soal kemarin.<br>" +
+                "Aku sadar aku kebawa emosi dan ikut memperbesar masalah yang harusnya bisa diselesaikan baik-baik.<br>" +
+                "Harusnya aku bisa lebih tenang dan nggak ngomong kasar di chat.<br><br>" +
+                "Sebentar lagi kita mau masuk bulan Ramadhan <br>" +
+                "Aku nggak mau ada salah paham atau rasa nggak enak di antara kita.<br>" +
+                "Kalau ada kata-kata atau sikapku yang nyakitin, aku bener-bener minta maaf.<br><br>" +
+                "Semoga kita bisa mulai Ramadhan dengan hati yang lebih bersih dan hubungan yang lebih baik lagi.<br>" +
+                "Terima kasih udah mau baca ini 🙏";
+            } else {
+                document.getElementById("hasil").innerHTML =
+                "Nama Kaga boleh Kosong Woi";
+            }
+        }
+    </script>
+
+</body>
+</html>
